@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raidy Freelancer</title>
+    <link rel="preload" href="normalize/style.css" as="style">
+    <link rel="stylesheet" href="normalize/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header>
-    <h2>Raidy Raul Freelancer</h2>
+    <h1 class="titulo">Raidy Raul <span>Freelancer</span></h1>
    </header>
 
-   <nav>
+   <div class="nav-bg">
+   <nav class="navegacion-principal contenedor">
      <a href="#">Inicio</a>
      <a href="#">Nosotros</a>
      <a href="#">Clientes</a>
      <a href="#">Contactos</a>
    </nav>
+  </div>
 
    <section>
-    <h2>Diseño y Desarrollo web Freelancer</h2>
+    <h2 class="titulo">Diseño y Desarrollo web Freelancer</h2>
 
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -110,7 +119,6 @@
          </form>
       </section>
    
-
    <footer>
     <p>Todos los reservados Raidy Raul</p>
    </footer>    
