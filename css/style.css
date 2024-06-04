@@ -63,7 +63,6 @@ body {
 @media (min-width: 768px) {
   .hero {
     height: 600px;
-    padding: 20px;
   }
 }
 
@@ -71,4 +70,11 @@ body {
   background-image: url(/img/4k-laptop-yn553k4gdhpc4hlh.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.contenido-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
