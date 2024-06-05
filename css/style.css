@@ -6,9 +6,11 @@
   --gris: grey;
 }
 
+/*Globales*/
+
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  box-sizing: border-box; /*Hack para box model*/
 }
 
 *,
@@ -17,17 +19,25 @@ html {
   box-sizing: inherit;
 }
 
+.hero {
+  background-image: url(/img/4k-laptop-yn553k4gdhpc4hlh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   font-size: 16px;
   font-family: 'Krub', sans-serif;
 }
 
+/*Titulos*/
 .titulo span {
   font-size: 15px;
 }
 
 .titulo {
   text-align: center;
+  margin: 1;
 }
 
 .navegacion-principal {
@@ -54,6 +64,8 @@ body {
   background-color: var(--secundario);
 }
 
+/*Recuerda arrglar los midia para 
+la imagen y los botones*/
 @media (min-width: 768px) {
   .navegacion-principal {
     flex-direction: row;
@@ -67,14 +79,57 @@ body {
 }
 
 .hero {
-  background-image: url(/img/4k-laptop-yn553k4gdhpc4hlh.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .contenido-hero {
-  position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+
+.ubicacion {
+  margin-top: 19rem;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--secundario);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.contenedor {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.sombra {
+  -webkit-box-shadow: 10px 7px 10px -7px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 10px 7px 10px -7px rgba(0, 0, 0, 0.71);
+  box-shadow: 10px 7px 10px -7px rgba(0, 0, 0, 0.71);
+  background-color: var(--blanco);
 }
