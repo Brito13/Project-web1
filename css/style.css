@@ -23,6 +23,7 @@ html {
   background-image: url(/img/4k-laptop-yn553k4gdhpc4hlh.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 2rem;
 }
 
 body {
@@ -120,11 +121,17 @@ la imagen y los botones*/
   border-radius: 10px;
 }
 
+.boton:hover {
+  background-color: var(--oscuro);
+}
+
 .contenedor {
-  display: inline-block;
   text-align: center;
+  display: flex;
+  display: inline-block;
   justify-content: center;
   justify-items: center;
+  border-radius: 10px;
 }
 
 .sombra {
@@ -132,4 +139,45 @@ la imagen y los botones*/
   -moz-box-shadow: 10px 7px 10px -7px rgba(0, 0, 0, 0.71);
   box-shadow: 10px 7px 10px -7px rgba(0, 0, 0, 0.71);
   background-color: var(--blanco);
+  border-radius: 10px;
+}
+
+/*Mis servicios*/
+
+/*Se le indica que repita 3 veces 1fr del data grip
+  del 100%
+  la sitaxis normal es
+  grid-template-columns: 1fr 1fr 1fr;
+  la otra es grid-template-columns: 33.3% 33.3% 33.3%;
+  */
+
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio p {
+  line-height: 2;
+}
+
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--secundario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
 }
